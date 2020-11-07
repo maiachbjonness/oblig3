@@ -1,0 +1,43 @@
+
+html, body {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.header {
+    display: inline-flex;
+    background-color: lightskyblue;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.header li {
+list-style: none;
+display: inline-block;
+justify-content: space-around;
+text-align: center;
+width: 180px;
+margin-top: 25px;
+margin-left: 30px;
+}
+
+h1 {
+    font-size: 35px;
+}
+ 
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
