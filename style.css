@@ -1,4 +1,4 @@
-
+/*Common for all pages  */
 html, body {
     margin-left: 100px;
     margin-right: 100px;
@@ -27,7 +27,7 @@ margin-left: 30px;
 h1 {
     font-size: 35px;
 }
- 
+
 a:link {
     text-decoration: none;
     color: black;
@@ -38,6 +38,59 @@ a:visited {
     color: black;
 }
 
+/*The schedule page */
+.schedule {
+  display: flex;
+  height: 90vh;
+  max-width: 1000px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.box {
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  width: 30%;
+  height: 30%;
+  flex-shrink: 1;
+  box-shadow: 0 0 10px rgba(60, 60, 60, 0.6);
+}
 
+.box h1{
+  font-size: 16px;
+  color: lightskyblue;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background: beige;
 
+}
+
+.box p{
+  color: black;
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.box-1 {background: beige;}
+.box-2 {background: beige;}
+.box-3 {background: beige;}
+.box-4 {background: beige;}
+.box-5 {background: beige;}
+.box-6 {background: beige;}
+.box-7 {background: beige;}
+.box-8 {background: beige;}
+.box-9 {background: beige;}
+
+@media screen and (max-width: 800px) {
+  .schedule {
+    flex-direction: column;
+  }
+}
