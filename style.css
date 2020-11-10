@@ -38,6 +38,15 @@ a:visited {
 }
 
 /*The schedule page */
+.heading{
+  display: flex;
+  height: 15vh;
+  flex-direction: row;
+  align-items: flex-start;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+
 .schedule {
   display: flex;
   height: 90vh;
@@ -49,7 +58,6 @@ a:visited {
 }
 
 .box {
-  font-size: 50px;
   color: white;
   padding: 10px;
   font-family: 'Lato', sans-serif;
@@ -60,36 +68,37 @@ a:visited {
   height: 30%;
   flex-shrink: 1;
   box-shadow: 0 0 10px rgba(60, 60, 60, 0.6);
-
 }
 
 .box h1{
-  font-size: 16px;
-  color: lightskyblue;
+  font-size: 25px;
+  color: #440d0f;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-  background: beige;
 
 }
 
 .box p{
   color: black;
-  font-size: 13px;
+  font-size: 20px;
   font-family: 'Lato', sans-serif;
-
 }
 
-.box-1 {background: beige;}
-.box-2 {background: beige;}
-.box-3 {background: beige;}
-.box-4 {background: beige;}
-.box-5 {background: beige;}
-.box-6 {background: beige;}
-.box-7 {background: beige;}
-.box-8 {background: beige;}
-.box-9 {background: beige;}
+.box-1 {background: #beb0a7;}
+.box-2 {background: #eddcd2;}
+.box-3 {background: #ddbea9;}
+.box-4 {background: #f2e8cf;}
+.box-5 {background: #beb0a7;}
+.box-6 {background: #beb0a7;}
+.box-7 {background: #beb0a7;}
+.box-8 {background: #beb0a7;}
+.box-9 {background: #beb0a7;}
 
-
+@media screen and (max-width: 800px) {
+  .schedule {
+    flex-direction: column;
+  }
+}
 
 /*Home page*/
 
@@ -116,7 +125,7 @@ a:visited {
     position: relative;
     left: 20px;
     top: -60px;
-    
+
 }
 
 
@@ -135,7 +144,7 @@ a:visited {
   align-items: stretch;
   flex-direction: row;
   justify-content: space-around;
-  
+
 }
 
 .contact-text {
@@ -151,11 +160,7 @@ flex-basis: 45%;
 border: 1px solid black;
 }
 
-@media screen and (max-width: 800px) {
-  .schedule {
-    flex-direction: column;
-  }
-}
+
 
 /*The staff page */
 .row {
