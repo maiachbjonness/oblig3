@@ -7,7 +7,6 @@ html, body {
 
 .header {
     display: inline-flex;
-    background-color: lightskyblue;
 }
 
 .logo {
@@ -61,6 +60,19 @@ a:visited {
   height: 30%;
   flex-shrink: 1;
   box-shadow: 0 0 10px rgba(60, 60, 60, 0.6);
+
+}
+
+.banner {
+   width: 95%;
+   height: 500px;
+   overflow: hidden;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .box h1{
@@ -71,6 +83,19 @@ a:visited {
   background: beige;
 
 }
+.text-image {
+    width: 50%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    line-height: 1.5em;
+    position: relative;
+    left: 20px;
+    top: -60px;
+    
+}
+
 
 .box p{
   color: black;
