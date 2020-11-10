@@ -4,7 +4,7 @@ html, body {
     margin-right: 100px;
     font-family: "Helvetica", sans-serif;
 }
-
+/*Navigation bar*/
 .header {
     display: inline-flex;
 }
@@ -63,18 +63,6 @@ a:visited {
 
 }
 
-.banner {
-   width: 95%;
-   height: 500px;
-   overflow: hidden;
-}
-
-.banner img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 .box h1{
   font-size: 16px;
   color: lightskyblue;
@@ -83,19 +71,6 @@ a:visited {
   background: beige;
 
 }
-.text-image {
-    width: 50%;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 5px 10px;
-    line-height: 1.5em;
-    position: relative;
-    left: 20px;
-    top: -60px;
-    
-}
-
 
 .box p{
   color: black;
@@ -113,6 +88,68 @@ a:visited {
 .box-7 {background: beige;}
 .box-8 {background: beige;}
 .box-9 {background: beige;}
+
+
+
+/*Home page*/
+
+.banner {
+   width: 95%;
+   height: 500px;
+   overflow: hidden;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.text-image {
+    width: 50%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    line-height: 1.5em;
+    position: relative;
+    left: 20px;
+    top: -60px;
+    
+}
+
+
+
+/*Contact page*/
+
+.contact-headline {
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.contact-text {
+  text-align: center;
+  padding: 50px 10px;
+  line-height: 1.5em;
+  font-size: 18px;
+  flex-basis: 45%;
+}
+
+.map {
+flex-basis: 45%;
+border: 1px solid black;
+}
 
 @media screen and (max-width: 800px) {
   .schedule {
