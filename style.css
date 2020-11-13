@@ -1,9 +1,15 @@
 /*Common for all pages  */
 html, body {
-    margin-left: 100px;
-    margin-right: 100px;
     font-family: "Helvetica", sans-serif;
+    padding: 10px;
 }
+
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /*Navigation bar*/
 .header {
     display: inline-flex;
@@ -37,6 +43,18 @@ a:visited {
     color: black;
 }
 
+@media (max-width: 900px){
+  .contact-container{
+    align-items: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header li{
+    width: 250px;
+  }
+}
+
 /*The schedule page */
 .heading{
   display: flex;
@@ -44,31 +62,38 @@ a:visited {
   flex-direction: row;
   align-items: flex-start;
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  /*font-size: 24px;*/
+}
+
+.heading h1{
+  font-size: 24px;
 }
 
 .schedule {
   display: flex;
-  height: 90vh;
+  /*height: 90vh;*/
   max-width: 1000px;
-  flex-direction: row;
+  /*flex-direction: row;*/
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: wrap;
+  justify-content: center;
+  align-items: stretch;
+  /*flex-flow: wrap;*/
+  gap: 30px;
 }
 
 .box {
   color: white;
-  padding: 10px;
+  padding: 20px 10px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
-  flex-basis: 30%;
-  width: 30%;
-  height: 30%;
-  flex-shrink: 1;
+  width: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
   box-shadow: 0 0 10px rgba(60, 60, 60, 0.6);
+  min-height: 200px;
+  background: #e5e5e5
 }
 
 .box h1{
@@ -76,57 +101,35 @@ a:visited {
   color: #440d0f;
   font-family: 'Lato', sans-serif;
   font-weight: 600;
-
+  padding: 0;
+  margin: 0;
 }
 
 .box p{
   color: black;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.box-1 {background: #beb0a7;}
-.box-2 {background: #eddcd2;}
-.box-3 {background: #ddbea9;}
-.box-4 {background: #f2e8cf;}
-.box-5 {background: #beb0a7;}
-.box-6 {background: #beb0a7;}
-.box-7 {background: #beb0a7;}
-.box-8 {background: #beb0a7;}
-.box-9 {background: #beb0a7;}
-
-
-@@media screen and (max-width: 1200px) {
-  .box{
-    width: 40%;
-  }
+.box h2{
+  padding: 0;
+  margin: 0;
+  color: black;
 }
 
-@@media screen and (max-width: 600px) {
+@media (max-width: 750px){
   .box{
-    width: 90%;
+    width: 100%;
   }
 }
-
-/* @@media (max-width: 800px) {
-  html, body{
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .schedule{
-    flex-direction: column;
-  }
-  .box{
-    flex: 100%;
-  }
-
-} */
 
 /*Home page*/
 
 .banner {
    width: 95%;
-   height: 500px;
+   height: auto;
    overflow: hidden;
 }
 
@@ -138,27 +141,18 @@ a:visited {
 
 
 .text-image {
-    width: 50%;
+    width: 70%;
     background-color: white;
     color: black;
     border: 1px solid black;
     padding: 5px 10px;
     line-height: 1.5em;
     position: relative;
-    left: 20px;
-    top: -60px;
-
 }
 
 
 
 /*Contact page*/
-
-.contact-headline {
-  margin-left: 30px;
-  margin-top: 60px;
-}
-
 .contact-container {
   display: flex;
   width: 100%;
@@ -166,22 +160,21 @@ a:visited {
   align-items: stretch;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 
 .contact-text {
   text-align: center;
-  padding: 50px 10px;
   line-height: 1.5em;
   font-size: 18px;
-  flex-basis: 45%;
 }
 
-.map {
-flex-basis: 45%;
+.map img{
 border: 1px solid black;
+width: 90%;
+height: auto;
 }
-
 
 
 /*The staff page */
